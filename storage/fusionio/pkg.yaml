@@ -1,0 +1,17 @@
+name: fusionio
+variant: scratch
+shell: /toolchain/bin/bash
+dependencies:
+  - stage: base
+  - image: ghcr.io/sleepingshell/siderolabs/fusionio:v1.6.0-alpha.0-8-g4caa7cb
+steps:
+  - install:
+      - |
+        mkdir -p /rootfs/lib/modules
+
+        cp -R /lib/modules/* /rootfs/lib/modules
+finalize:
+  - from: /rootfs
+    to: /rootfs
+  - from: /pkg/manifest.yaml
+    to: /

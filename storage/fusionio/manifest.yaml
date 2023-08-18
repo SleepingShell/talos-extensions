@@ -1,0 +1,10 @@
+version: v1alpha1
+metadata:
+  name: fusionio
+  version: linux6-main
+  author: SleepingShell
+  description: |
+    This provides the RemixVSL/iomemory-vsl4 kernel module to use fusionIO PCIe cards
+  compatibility:
+    talos:
+      version: ">= v1.0.0"

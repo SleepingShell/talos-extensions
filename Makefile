@@ -57,7 +57,8 @@ TARGETS = \
 		tailscale \
 		thunderbolt \
 		usb-modem-drivers \
-		zfs
+		zfs \
+		fusionio
 
 # Temporarily disabled, as mellanox-ofed fails to build with Linux 6.1
 #		mellanox-ofed \
